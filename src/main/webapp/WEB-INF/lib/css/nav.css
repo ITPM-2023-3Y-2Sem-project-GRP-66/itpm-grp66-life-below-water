@@ -1,0 +1,67 @@
+@charset "ISO-8859-1";
+header {
+	background-color: #355282;
+	color: #fff;
+	padding: 25px;
+}
+
+
+body {
+  background-image: url('img/back.png');
+}
+
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 50px;
+}
+nav lii {
+	margin-left: 700px;
+}
+nav liii {
+	margin-left: 100px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* Add any additional styling as needed */
+
+
+img {
+  margin: 0px 0px;
+  width: 1505px;
+  height: 550px;
+}
+
+main {
+	padding: 20px;
+}
+h2 {
+  text-align: center;
+  padding: 12px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #400000;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #355282;
+}
+footer {
+	background-color: #355282;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
