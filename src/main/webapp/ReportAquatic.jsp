@@ -2,7 +2,7 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.text.DateFormat"%>
 <%@page import="java.sql.Time"%>
-
+<%@page import="aquatic.AquaticAdd"%>
 <%@ page import="java.sql.Blob" %>
 <%@ page import="java.util.Base64" %>
 <%@ page import="java.sql.ResultSet" %>
@@ -38,7 +38,7 @@
  		<%
 	String id = request.getParameter("id");
 	String driverName = "com.mysql.jdbc.Driver";
-	String ConnectionUrl = "jdbc:mysql://localhost:3306/";
+	String ConnectionUrl = "jdbc:mysql://localhost:3307/";
 	String dbName = "lifebelow";
 	String UserId="root";
 	String password = "1234";
@@ -70,7 +70,7 @@
 	</table>
 <hr>
 <br>
-<p><tab1><b><u><font size="+2" color="886C65">COMPLAIN REPORT</b></u></font></tab1></p>
+<p><tab1><b><u><font size="+2" color="886C65">AQUATIC REPORT</b></u></font></tab1></p>
 
 <%
 try
@@ -78,12 +78,12 @@ try
 Class.forName("com.mysql.jdbc.Driver").newInstance();
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/lifebelow","root","1234");
 Statement st=con.createStatement();
-String strQuery = "SELECT COUNT(*) FROM complain_table";
+String strQuery = "SELECT COUNT(*) FROM aquatic_table";
 ResultSet rs = st.executeQuery(strQuery);
 String Countrow="";
 while(rs.next()){
 Countrow = rs.getString(1);
-out.println("Complains  :" +Countrow);
+out.println("Aquatic  :" +Countrow);
 }
 }
 catch (Exception e){
@@ -95,7 +95,7 @@ e.printStackTrace();
 									<thead>
 									  <tr>
 										<th scope="col">No</th>
-										<th scope="col">Complain Type</th>
+										<th scope="col">Aquatic Name</th>
 										<th scope="col">Description</th>
 										<th scope="col">Image</th>
 
@@ -106,7 +106,7 @@ e.printStackTrace();
 											try{
 												connection = DriverManager.getConnection(ConnectionUrl+dbName,UserId,password);
 												statement=connection.createStatement();
-												String sql ="SELECT * from complain_table";
+												String sql ="SELECT * from aquatic_table";
 												
 												resultset = statement.executeQuery(sql);
 												while(resultset.next()){
@@ -117,8 +117,8 @@ e.printStackTrace();
 									%>
 									<tr>
 									<td><%=resultset.getInt("id") %></td>
-									<td><%=resultset.getString("cType") %></td>
-									<td><%=resultset.getString("cDescri") %></td>
+									<td><%=resultset.getString("aName") %></td>
+									<td><%=resultset.getString("aDesc") %></td>
 									<td>
                                 <%-- Retrieve the image data from the result set --%>
                                 <% Blob imageBlob = resultset.getBlob("image");
