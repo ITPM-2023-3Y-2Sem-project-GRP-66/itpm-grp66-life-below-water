@@ -20,7 +20,7 @@ import javax.servlet.http.Part;
 @MultipartConfig(maxFileSize = 161772150)
 public class AquaticAdd extends HttpServlet {
 
-    private String dbURL = "jdbc:mysql://localhost:3306/lifebelow";
+    private String dbURL = "jdbc:mysql://localhost:3307/lifebelow";
     private String dbUser = "root";
     private String dbPass = "1234";
 

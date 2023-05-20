@@ -38,7 +38,7 @@
  		<%
 	String id = request.getParameter("id");
 	String driverName = "com.mysql.jdbc.Driver";
-	String ConnectionUrl = "jdbc:mysql://localhost:3306/";
+	String ConnectionUrl = "jdbc:mysql://localhost:3307/";
 	String dbName = "lifebelow";
 	String UserId="root";
 	String password = "1234";

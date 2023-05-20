@@ -8,7 +8,7 @@
 <%@ page import="java.util.Base64" %>
 <%
 String driver = "com.mysql.jdbc.Driver";
-String connectionUrl = "jdbc:mysql://localhost:3306/";
+String connectionUrl = "jdbc:mysql://localhost:3307/";
 String database = "lifebelow";
 String userid = "root";
 String password = "1234";

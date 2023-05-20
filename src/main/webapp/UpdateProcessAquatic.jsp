@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
 <%! String driverName = "com.mysql.jdbc.Driver";%>
-<%!String url = "jdbc:mysql://localhost:3306/lifebelow";%>
+<%!String url = "jdbc:mysql://localhost:3307/lifebelow";%>
 <%!String user = "root";%>
 <%!String psw = "1234";%>
 <%
