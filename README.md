@@ -9,6 +9,18 @@ It20615048-article management
 
 It20194208-complain management
 
+Technologies-
+Frontened : HTML, CSS
+Backend: JAVA
+Database: Mysql
+IDE :Intelij
+
+Other Tools-
+GitHub
+Azure Board
+Selenium
+SonarQube
+
 ## Group members
 It20662264
 Diyunugala S A
